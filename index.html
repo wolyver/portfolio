@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <title>Validação de E-mail</title>
+</head>
+<body>
+    <h1> Insira seu E-mail </h1>
+
+    <form>
+        <div class="form-group">
+        <label for="email"> Digite seu e-mail: </label> <br> <br>
+        <input type="email" id="email" name="email" size="40" placeholder="seuemail@dominio.com" required
+        onblur = "validarEmail()" 
+        onfocus = "redefinirMsg()">  <br> <br>
+        <span id="error-email"> </span>
+    
+    </div>
+    <input type="image" src="img/ok.png" alt="Submit" width="60" height="60">
+    </form>
+
+
+  <script src= "script.js"> </script>  
+</body>
+</html>
